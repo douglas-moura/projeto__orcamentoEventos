@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-2xl font-extrabold
+    }
+
+    h2 {
+        @apply text-xl font-semibold
+    }
+}
+
+@layer components {
+    .titulo-sessao {
+        @apply text-blue-400
+    }
+}

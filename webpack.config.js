@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-    mode: 'development', // Pode ser 'development' ou 'production'
+    mode: 'production', // Pode ser 'development' ou 'production'
     entry: './src/index.js', // Arquivo de entrada principal
     output: {
         filename: 'index.js', // Nome do arquivo gerado
@@ -16,7 +16,18 @@ module.exports = {
                 test: /\.css$/, // Processa arquivos CSS
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader'
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader', // Processa o Tailwind via PostCSS
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    require('tailwindcss'), // Inclui o Tailwind
+                                    require('autoprefixer'), // Adiciona prefixos automáticos
+                                ],
+                            },
+                        },
+                    },
                 ],
             },
             {
