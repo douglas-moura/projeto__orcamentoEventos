@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Orçamento Eventos</title>
-    </head>
-    <body>
-        <h1 class="titulo-sessao">Orçamento</h1>
-        <script src="./index.js"></script>
-    </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Eventos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <section class="form-section">
+            <h1 class="titulo-sessao">Faça Já Seu Orçamento</h1><br>
+            <form action="">
+                <span class="campo-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                </span>
+                <span class="campo-input">
+                    <label for="tel">Tel</label>
+                    <input type="int" id="tel" placeholder="Digite seu telefone">
+                </span>
+                <span class="campo-input">
+                    <label for="data">Data</label>
+                    <input type="int" id="data" placeholder="Digite a data desejada">
+                </span>
+            </form>
+        </section>
+        
+        <div>
+    
+    
+    
+            <h2 class="form-section-radio">Selecione o Tipo de Evento</h2><br>
+    
+            <div class="form-section-radio">
+                <input type="radio" id="corporativo" name="evento" value="Corporativo">
+                <label for="corporativo">Corporativo</label><br>
+    
+                <input type="radio" id="aniversario" name="evento" value="Aniversario">
+                <label for="aniversario">Aniversário</label><br>
+    
+                <input type="radio" id="casamento" name="evento" value="Casamento">
+                <label for="casamento">Casamento</label><br>
+    
+                <input type="radio" id="ensaio" name="evento" value="Ensaio">
+                <label for="ensaio">Ensaio</label><br><br>
+            </div>
+    
+            <label for="qtdpessoas">Quantidade de Pessoas:</label>
+            <input type="int" id="qtdpessoas" placeholder="Total de pessoas"><br><br>
+        </div>
+    
+        <hr>
+        <br>
+        <h2>Opções de Comida</h2>
+        <br>
+        <div class="options">
+            <input type="radio" id="churrasco" name="comida" value="Churrasco">
+            <label for="churrasco">Churrasco</label><br>
+    
+            <input type="radio" id="massas" name="comida" value="Massas">
+            <label for="massas">Massas</label><br>
+    
+            <input type="radio" id="feijoada" name="comida" value="Feijoada">
+            <label for="feijoada">Feijoada</label><br>
+    
+            <input type="radio" id="bacalhoada" name="comida" value="Bacalhoada">
+            <label for="bacalhoada">Bacalhoada</label><br>
+    
+            <div class="checkbox-inline">
+                <input type="checkbox" id="cafe" name="comida" value="Cafe">
+                <label for="cafe">Adicionar Café da Manhã</label>
+            </div>
+            
+            <div class="checkbox-inline">
+                <input type="checkbox" id="sobremesa" name="comida" value="Sobremesa">
+                <label for="sobremesa">Adicionar Sobremesa</label>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
 </html>

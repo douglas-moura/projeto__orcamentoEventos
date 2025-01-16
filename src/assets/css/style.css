@@ -4,16 +4,59 @@
 
 @layer base {
     h1 {
-        @apply text-2xl font-extrabold
+        @apply text-2xl font-extrabold;
     }
 
     h2 {
-        @apply text-xl font-semibold
+        @apply text-xl font-semibold;
     }
 }
 
 @layer components {
     .titulo-sessao {
-        @apply text-blue-400
+        @apply text-blue-400;
     }
+
+    .campo-input {
+        @apply flex relative
+    }
+
+    .campo-input label {
+        @apply absolute text-xs ml-2 bg-white h-4 -top-2 px-2 
+    }
+
+    .campo-input input {
+        @apply border border-neutral-300 p-2 pt-3 text-sm rounded mb-4
+    }
+}
+
+.form-section {
+    margin: 15px; /* Adiciona margem para todas as seções do formulário */
+}
+
+.options input {
+    width: 20%; /* Define a largura para 20% do espaço disponível */
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #0c0101; 
+    border-radius: 4px; 
+}
+
+.options label {
+    margin-left: 5px; /* Ajusta o espaçamento das labels */
+}
+
+.options input {
+    width: auto; /* Permite que os checkboxes e radio buttons tenham largura automática */
+    margin-right: 5px;
+}
+
+.form-section-radio {
+    margin-left: 1px; /* Adiciona margem para alinhar à margem esquerda da página */
+}
+
+.checkbox-inline {
+    display: inline-block;
+    margin-right: 10px;
 }
