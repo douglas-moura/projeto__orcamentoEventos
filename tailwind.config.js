@@ -4,7 +4,14 @@ module.exports = {
         "./src/**/*.{html,js}"
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                'cor-primaria': '#00666B'
+            }
+        },
+        fontFamily: {
+            lexend: ['Lexend', 'Heveltica', 'sans-serif'],
+        }
     },
     plugins: [],
 }

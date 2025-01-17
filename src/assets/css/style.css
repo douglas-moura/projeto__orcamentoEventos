@@ -1,20 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    h1 {
-        @apply text-2xl font-extrabold;
+    * {
+        @apply font-lexend border-[0px] border-red-500 text-neutral-600
     }
 
-    h2 {
-        @apply text-xl font-semibold;
+    h1 { @apply w-full text-4xl font-extrabold }
+    h2 { @apply w-full text-2xl font-semibold }
+    h3 { @apply w-full text-lg font-semibold }
+    h4 { @apply w-full text-base font-medium }
+    h5 { @apply w-full text-sm font-light }
+    h6 { @apply w-full text-xs font-light }
+
+    main {
+        @apply bg-neutral-100
+    }
+
+    section {
+        @apply w-full flex flex-col py-12
     }
 }
 
 @layer components {
     .titulo-sessao {
-        @apply text-blue-400;
+        @apply text-cor-primaria container mb-4
+    }
+
+    .titulo-container {
+        @apply text-neutral-600 mb-4
+    }
+
+    .container {
+        @apply grid gap-4 w-5/6 mx-auto
     }
 
     .campo-input {
@@ -26,7 +47,15 @@
     }
 
     .campo-input input {
-        @apply border border-neutral-300 p-2 pt-3 text-sm rounded mb-4
+        @apply w-full border font-light border-neutral-300 p-3 pt-3 text-sm rounded mb-4 outline-none
+    }
+
+    .box-orcamento {
+        @apply p-8 rounded-lg bg-white shadow-md
+    }
+
+    .linha-form {
+        @apply grid gap-3
     }
 }
 

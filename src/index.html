@@ -8,22 +8,30 @@
 </head>
 <body>
     <main>
-        <section class="form-section">
-            <h1 class="titulo-sessao">Faça Já Seu Orçamento</h1><br>
-            <form action="">
-                <span class="campo-input">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome">
-                </span>
-                <span class="campo-input">
-                    <label for="tel">Tel</label>
-                    <input type="int" id="tel" placeholder="Digite seu telefone">
-                </span>
-                <span class="campo-input">
-                    <label for="data">Data</label>
-                    <input type="int" id="data" placeholder="Digite a data desejada">
-                </span>
-            </form>
+        <section>
+            <h1 class="titulo-sessao">Faça já seu orçamento</h1><br>
+            <div class="container box-orcamento grid-cols-2">
+                <form action="">
+                    <h3 class="titulo-container">Dados Pessoas</h3>
+                    <span class="linha-form grid-cols-2">
+                        <span class="campo-input">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Digite seu nome">
+                        </span>
+                        <span class="campo-input">
+                            <label for="tel">Telefone</label>
+                            <input type="int" id="tel" placeholder="Digite seu telefone">
+                        </span>
+                    </span>
+                    <span class="campo-input">
+                        <label for="data">Data</label>
+                        <input type="int" id="data" placeholder="Digite a data desejada">
+                    </span>
+                </form>
+                <div>
+                    <h3 class="titulo-container">Orçamento</h3>
+                </div>
+            </div>
         </section>
         
         <div>
